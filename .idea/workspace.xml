@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b50f366-770d-43c1-a391-5427d38705b6" name="Default Changelist" comment="" />
+    <list default="true" id="4b50f366-770d-43c1-a391-5427d38705b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ivGLzoZqkpQbKw15ZYy11JX1Vq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -18,7 +24,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/nishchay/dp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -38,7 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602780600119</updated>
       <workItem from="1602780607566" duration="3000" />
-      <workItem from="1602780761115" duration="2606000" />
+      <workItem from="1602780761115" duration="3214000" />
     </task>
     <servers />
   </component>
@@ -46,9 +52,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="186" y="9" key="SettingsEditor" timestamp="1602781692092">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1602784135733">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602781692092" />
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1602784135733" />
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1602784321610">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602784321610" />
+    <state x="186" y="9" key="SettingsEditor" timestamp="1602784115058">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602784115058" />
   </component>
 </project>
