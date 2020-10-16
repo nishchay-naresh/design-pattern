@@ -11,31 +11,29 @@ Types of Design Patterns
 
 
 
-**1. Creational:**
+### 1. Creational: 
 
-    1.	Singleton
-    2.	Builder
-    3.	Prototype
-    4.	Factory
-    5.	Abstract Factory
+1.	Singleton
+2.	Builder
+3.	Prototype
+4.	Factory
+5.	Abstract Factory
 
+### 2. Structural: 
 
-**2. Structural**
+1.	Adapter
+2.	Façade
+3.	Decorator
+4.	Proxy
+5.	Bridge
+6.	Composite
+7.	Flyweight
 
-    1.	Adapter
-    2.	Façade
-    3.	Decorator
-    4.	Proxy
-    5.	Bridge
-    6.	Composite
-    7.	Flyweight
+### 3. Behavioral: 
 
-
-**3. Behavioral**
-
-    1.	Observer
-    2.	Strategy
-    3.	Visitor
-    4.	Iterator
-    5.	Chain of Responsibility
+1.	Observer
+2.	Strategy
+3.	Visitor
+4.	Iterator
+5.	Chain of Responsibility
 
