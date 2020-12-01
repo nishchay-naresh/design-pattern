@@ -7,7 +7,8 @@ public class Adapter implements Target {
   @Override
   public void request() {
     System.out.println("request is now propagated to Adaptee class");
-    adaptee.processRequest();
+    // actual implantation is been called from Adapter object
+    adaptee.request();
   }
 
 }
