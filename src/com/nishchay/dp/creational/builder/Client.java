@@ -4,6 +4,7 @@ public class Client {
 
 
     public static void main(String[] args) {
+
         User user1 = new User.UserBuilder("Iron", "Man")
                 .age(30)
                 .phone("1234567")
@@ -12,8 +13,8 @@ public class Client {
 
         System.out.println(user1);
 
-        User user2 = new User.UserBuilder("Jack", "Reacher")
-                .age(40)
+        User user2 = new User.UserBuilder("Wonder", "Women")
+                .age(35)
                 .phone("5655")
                 //no city
                 .build();
