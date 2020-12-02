@@ -9,13 +9,13 @@ import java.util.List;
 
 public class CoffeeFactory {
 
-    protected static List<Coffee> coffeeList = new ArrayList<Coffee>();
+    protected static List<Coffee> coffeeList = new ArrayList<>();
 
     public static Coffee makeCoffee(CoffeeFlavour flavourName, CoffeeSugar coffeeSugar) {
 
         Coffee coffee = new Coffee(flavourName, coffeeSugar);
 
-        System.out.printf("Making '%s' with '%d' spoon suger.\n", coffee.getFlavourName(), coffee.getCoffeeSugar().getSugar());
+        System.out.printf("Making '%s' with '%d' spoon sugar.\n", coffee.getFlavourName().getName(), coffee.getCoffeeSugar().getSugar());
 
         coffeeList.add(coffee);
 

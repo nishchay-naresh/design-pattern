@@ -1,20 +1,23 @@
 package com.nishchay.dp.structural.flyweight;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class CoffeeFactory {
 
-    protected static List<Coffee> coffeeList = new ArrayList<Coffee>();
+    protected static Map<CoffeeFlavour, Coffee> coffeeMap = new HashMap<>();
 
-    public static Coffee makeCoffee(CoffeeFlavour flavourName, CoffeeSugar latteArt) {
-        Coffee coffee = new Coffee(flavourName, latteArt);
-        System.out.printf("Making '%s' with '%d' spoon suger.\n", coffee.getFlavourName(), coffee.getCoffeeSugar().getSugar());
-        coffeeList.add(coffee);
+    public static Coffee makeCoffee(CoffeeFlavour flavourName, CoffeeSugar coffeeSugar) {
+        Coffee coffee = coffeeMap.get(flavourName);
+        if (coffee == null) {
+            coffee = new Coffee(flavourName, coffeeSugar);
+            coffeeMap.put(flavourName, coffee);
+        }
+
+        System.out.printf("Making '%s' with '%d' spoon sugar.\n", coffee.getFlavourName().getName(), coffee.getCoffeeSugar().getSugar());
         return coffee;
     }
 
     public static int getNumberOfCoffee() {
-        return coffeeList.size();
+        return coffeeMap.size();
     }
 }
