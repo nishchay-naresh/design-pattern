@@ -1,12 +1,42 @@
+# Design Principles
+
+####    SOLID
+
+**S - Single Responsibility Principle**
+    
+“One class should have one and only one responsibility”
+**O - Open Closed Principle**
+
+“Software components should be open for extension, but closed for modification”
+
+**L - Liskov’s Substitution Principle**
+
+“Derived types must be completely substitutable for their base types”
+
+**I - Interface Segregation Principle**
+
+Make fine grained interfaces that are client specific.
+Don't create fatty interface, Implementation classes require to implement unnecessary methods
+ 
+**D - Dependency Inversion Principle**
+
+Dependency Inversion principle states that:
+1.	High-level modules should not depend on low-level modules. Both should depend on abstractions.
+2.	Abstractions should not depend on details. Details should depend on abstractions.
+
+
+
 # Design Patterns
 
 This repository is having the code implementation for below Design Patterns
 
 
 Types of Design Patterns
-1. Creational Patterns - provide a way to create objects while hiding the creation logic
-2. Structural Patterns - deals with concern class and object composition (IS A, HAS A)
+1. Creational Patterns - Deals with the process of creation of objects of a class.
+2. Structural Patterns - deals with objects and arrangement of objects (IS A, HAS A)
 3. Behavioral Patterns - concerned with communication between objects.
+
+
 4. J2EE Patterns - specifically concerned with the presentation tier
 
 
@@ -21,19 +51,25 @@ Types of Design Patterns
 
 ### 2. Structural: 
 
-1.	Adapter
-2.	Façade
-3.	Decorator
-4.	Proxy
-5.	Bridge
-6.	Composite
-7.	Flyweight
+6.	Adapter
+7.	Façade
+8.	Decorator
+9.	Proxy
+10.	Flyweight
+11.	Composite
+12.	Bridge
+
 
 ### 3. Behavioral: 
 
-1.	Observer
-2.	Strategy
-3.	Visitor
-4.	Iterator
-5.	Chain of Responsibility
+13.	Observer
+14.	Chain of Responsibility
+15.	Visitor
+16.	Command
+17.	Strategy
+18.	State
+19.	Iterator
+20.	Mediator
+21.	Interpreter
+22.	Memento
 
