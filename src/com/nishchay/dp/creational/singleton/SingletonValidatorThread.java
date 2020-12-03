@@ -2,7 +2,7 @@ package com.nishchay.dp.creational.singleton;
 
 public class SingletonValidatorThread implements Runnable {
 
-    ThreadSafeSingleton singleton = null;
+    ThreadSafeSingleton singleton;
 
     public SingletonValidatorThread(ThreadSafeSingleton singleton) {
         this.singleton = singleton;
