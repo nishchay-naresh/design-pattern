@@ -42,9 +42,7 @@ public class Manager implements IEmployee {
 
     @Override
     public void showAllEmployees() {
-        Iterator<IEmployee> itr = employeeList.iterator();
-        while (itr.hasNext()) {
-            IEmployee emp = itr.next();
+        for (IEmployee emp : employeeList) {
             System.out.println("Name:" + emp.getName() + " Salary:" + emp.getSalary());
         }
     }
