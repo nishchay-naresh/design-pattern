@@ -17,6 +17,7 @@
 **I - Interface Segregation Principle**
 
 Make fine grained interfaces that are client specific.
+
 Don't create fatty interface, Implementation classes require to implement unnecessary methods
  
 **D - Dependency Inversion Principle**
