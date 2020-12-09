@@ -5,6 +5,7 @@
 **S - Single Responsibility Principle**
     
 “One class should have one and only one responsibility”
+
 **O - Open Closed Principle**
 
 “Software components should be open for extension, but closed for modification”
