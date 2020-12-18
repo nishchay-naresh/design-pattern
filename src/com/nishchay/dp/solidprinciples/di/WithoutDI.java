@@ -19,18 +19,15 @@ public class WithoutDI {
 }
 
 class BackEndDeveloper {
-
     public void writeJava() {
         System.out.println("java code");
     }
 }
 
 class FrontEndDeveloper {
-
     public void writeJavascript() {
         System.out.println("javascript code");
     }
-
 }
 
 class Project {
@@ -42,7 +39,6 @@ class Project {
         backEndDeveloper.writeJava();
         frontEndDeveloper.writeJavascript();
     }
-
 }
 /*
  *
