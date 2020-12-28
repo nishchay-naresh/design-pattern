@@ -30,12 +30,12 @@ public class Product implements Observable {
     }
 
     @Override
-    public void register(Observer observer) {
+    public void addObserver(Observer observer) {
         users.add(observer);
     }
 
     @Override
-    public void unRegister(Observer observer) {
+    public void removeObserver(Observer observer) {
         users.remove(observer);
     }
 

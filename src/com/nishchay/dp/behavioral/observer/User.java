@@ -8,13 +8,12 @@ public class User implements Observer {
     public User(String name, Observable observable) {
         this.name = name;
         this.observable = observable;
-        observable.register(this);
+        observable.addObserver(this);
     }
 
     @Override
     public void sendNotification() {
         System.out.println("Notification sent to user - " + name);
     }
-
 
 }

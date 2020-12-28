@@ -4,26 +4,25 @@ public class Client {
 
     public static void main(String[] args) {
 
-        Subject subject = new Subject("IPhone 10");
-        Observer user1 = new User("User1", subject);
-        Observer user2 = new User("User2", subject);
-        Observer user3 = new User("User3", subject);
-        Observer user4 = new User("User4", subject);
+        Product product = new Product("IPhone 10");
+        Observer user1 = new User("User1", product);
+        Observer user2 = new User("User2", product);
+        Observer user3 = new User("User3", product);
+        Observer user4 = new User("User4", product);
 
-        String currentStockStatus = subject.getStatus();
+        String currentStockStatus = product.getStatus();
         String changedStockStatus = "InStock";
-        System.out.println("Product - " + subject.getProdName() +" ,is currently in status - " + subject.getStatus());
-        System.out.println("Notification will be sent to all registered user for the state change - " +  currentStockStatus + " -> " + changedStockStatus);
-        subject.setStatus(changedStockStatus);
+        System.out.println("Product - " + product.getProdName() + ", is currently in status - " + product.getStatus());
+        System.out.println("Notification will be sent to all registered user for the state change : " + currentStockStatus + " -> " + changedStockStatus);
+        product.setStatus(changedStockStatus);
 
-        subject.unRegister(user3);
+        product.removeObserver(user3);
 
-        currentStockStatus = subject.getStatus();
+        currentStockStatus = product.getStatus();
         changedStockStatus = "OutOfStock";
-        System.out.println("Product - " + subject.getProdName() +" ,is currently in status - " + subject.getStatus());
-        System.out.println("Notification will be sent to all registered user for the state change - " +  currentStockStatus + " -> " + changedStockStatus);
-        subject.setStatus(changedStockStatus);
-
+        System.out.println("Product - " + product.getProdName() + ", is currently in status - " + product.getStatus());
+        System.out.println("Notification will be sent to all registered user for the state change : " + currentStockStatus + " -> " + changedStockStatus);
+        product.setStatus(changedStockStatus);
 
     }
 }
