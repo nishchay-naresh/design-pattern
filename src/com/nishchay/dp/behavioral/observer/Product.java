@@ -3,14 +3,14 @@ package com.nishchay.dp.behavioral.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Subject implements Observable {
+public class Product implements Observable {
 
-    private List<Observer> users =  new ArrayList<>();
+    private List<Observer> users = new ArrayList<>();
 
     private final String prodName; // immutable
     private String status; // mutable- lead state change
 
-    public Subject(String name) {
+    public Product(String name) {
         super();
         this.prodName = name;
         this.status = "unknown";
