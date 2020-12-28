@@ -25,6 +25,7 @@ public class ThreadSafeSingleton implements Serializable, Cloneable{
 	    return instance;
 	}
 
+	// guard against serialization
 	protected Object readResolve() {
 		return getInstance();
 	}
@@ -34,5 +35,4 @@ public class ThreadSafeSingleton implements Serializable, Cloneable{
 	public Object clone() throws CloneNotSupportedException {
 		throw new CloneNotSupportedException();
 	}
-
 }
