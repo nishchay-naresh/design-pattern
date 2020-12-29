@@ -14,11 +14,13 @@ public class Client {
         manager.addEmployee(dev3);
 
         manager.showAllEmployees();
+        System.out.println("--------------------------------");
 
         manager.doWork();
         for(IEmployee emp : manager.getEmployeeList()){
           emp.doWork();
         }
+        System.out.println("--------------------------------");
 
         manager.removeEmployee(dev2);
         manager.showAllEmployees();
