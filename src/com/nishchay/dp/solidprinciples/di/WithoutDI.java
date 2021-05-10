@@ -19,13 +19,13 @@ public class WithoutDI {
 }
 
 class BackEndDeveloper {
-    public void writeJava() {
+    void writeJava() {
         System.out.println("java code");
     }
 }
 
 class FrontEndDeveloper {
-    public void writeJavascript() {
+    void writeJavascript() {
         System.out.println("javascript code");
     }
 }
@@ -35,7 +35,7 @@ class Project {
     private BackEndDeveloper backEndDeveloper = new BackEndDeveloper();
     private FrontEndDeveloper frontEndDeveloper = new FrontEndDeveloper();
 
-    public void implement() {
+    void implement() {
         backEndDeveloper.writeJava();
         frontEndDeveloper.writeJavascript();
     }
