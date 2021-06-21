@@ -2,11 +2,13 @@ package com.nishchay.dp.solidprinciples.di;
 
 
 /*
- *
+ * => Should depend upon abstractions rather than concrete implementation
  * Dependency Inversion principle states that:
  *   1.	High-level modules should not depend on low-level modules. Both should depend on abstractions.
  *   2.	Abstractions should not depend on details. Details should depend on abstractions.
  *
+ *=> Every dependency in the design should target an interface or an abstract class.
+ *   No dependency should target a concrete class.
  *
  * */
 public class WithoutDI {

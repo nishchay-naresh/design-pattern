@@ -31,7 +31,7 @@ class BackEndDeveloper implements Developer {
         writeJava();
     }
 
-    public void writeJava() {
+    private void writeJava() {
         System.out.println("java code");
     }
 }
@@ -42,7 +42,7 @@ class FrontEndDeveloper implements Developer {
         writeJavascript();
     }
 
-    public void writeJavascript() {
+    private void writeJavascript() {
         System.out.println("javascript code");
     }
 }
@@ -51,11 +51,11 @@ class Project {
 
     private List<Developer> developers;
 
-    public Project(List<Developer> developers) {
+    Project(List<Developer> developers) {
         this.developers = developers;
     }
 
-    public void implement() {
+    void implement() {
         developers.forEach(d -> d.develop());
     }
 
