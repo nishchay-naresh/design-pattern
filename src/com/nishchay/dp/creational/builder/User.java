@@ -1,10 +1,10 @@
 package com.nishchay.dp.creational.builder;
+
+
 /*
  * Spring boot User class is the another good example where builder has been used to get the immutable copy of complex User class
  * https://docs.spring.io/spring-security/site/docs/4.2.15.RELEASE/apidocs/org/springframework/security/core/userdetails/User.UserBuilder.html
- *
  * */
-
 public class User {
     //All final attributes
     private final String firstName; // required
@@ -54,6 +54,7 @@ public class User {
         private String phone;
         private String city;
 
+        // builder constructor containing mandatory attributes
         public UserBuilder(String firstName, String lastName) {
             this.firstName = firstName;
             this.lastName = lastName;
