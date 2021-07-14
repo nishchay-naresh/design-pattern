@@ -3,17 +3,19 @@ package com.nishchay.dp.behavioral.observer;
 import java.util.ArrayList;
 import java.util.List;
 
+// concrete Observable class
 public class Product implements Observable {
 
-    private List<Observer> users = new ArrayList<>();
+    private List<Observer> users;
 
     private final String prodName; // immutable
-    private String status; // mutable- lead state change
+    private String status; // mutable - lead to state change
 
     public Product(String name) {
         super();
         this.prodName = name;
         this.status = "unknown";
+        users = new ArrayList<>();
     }
 
     public String getProdName() {
@@ -46,4 +48,9 @@ public class Product implements Observable {
             user.sendNotification();
         }
     }
+
+    public int getRegisterUserCount() {
+       return users.size();
+    }
+
 }
