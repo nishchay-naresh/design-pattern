@@ -1,4 +1,4 @@
-package com.nishchay.dp.structural.decorator;
+package com.nishchay.dp.structural.decorator.entity;
 
 public class Circle implements Shape {
 

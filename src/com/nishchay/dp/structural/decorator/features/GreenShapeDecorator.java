@@ -1,4 +1,6 @@
-package com.nishchay.dp.structural.decorator;
+package com.nishchay.dp.structural.decorator.features;
+
+import com.nishchay.dp.structural.decorator.entity.Shape;
 
 public class GreenShapeDecorator extends ShapeDecorator {
 

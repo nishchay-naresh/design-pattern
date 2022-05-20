@@ -1,4 +1,4 @@
-package com.nishchay.dp.structural.decorator;
+package com.nishchay.dp.structural.decorator.entity;
 
 public class Rectangle implements Shape {
 
