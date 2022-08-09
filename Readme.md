@@ -94,7 +94,7 @@ Types of Design Patterns
 14.	Chain of Responsibility - Object passes through various instances, coordinated by Handler. Eg: A try-catch block with multiple catch
 15.	Visitor - Object which visits all similar instances. Eg: File Traverse, or Calculate total bill from cart.
 16.	Command - Object encapsulates action with common interface which executor calls. Eg: Remote click.
-17.	Strategy - Encapsulate algorithms and execute either. Eg: Collections.sort() and Arrays.sort()
+17.	Strategy - Switch the algorithm/strategy at run time based upon the situation. Eg: Collections.sort() and Arrays.sort()
 18.	State - Behavior based on current state of object.
 19.	Iterator - Iterating through a collection of objects.
 20.	Mediator 
