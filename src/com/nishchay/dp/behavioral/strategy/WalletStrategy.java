@@ -1,10 +1,10 @@
 package com.nishchay.dp.behavioral.strategy;
 
-public class PayByWallet implements PayStrategy {
+public class WalletStrategy implements PaymentStrategy {
 
-    private final String walletName; // Paytm/PhonePe
+    private String walletName; // Paytm/phonepe
 
-    public PayByWallet(String walletName) {
+    public WalletStrategy(String walletName) {
         this.walletName = walletName;
     }
 

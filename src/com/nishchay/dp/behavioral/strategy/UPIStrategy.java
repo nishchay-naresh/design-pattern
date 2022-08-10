@@ -1,10 +1,10 @@
 package com.nishchay.dp.behavioral.strategy;
 
-public class PayByUPI implements PayStrategy {
+public class UPIStrategy implements PaymentStrategy {
 
-	private final String upiID;
+	private String upiID;
 
-	public PayByUPI(String upiID) {
+	public UPIStrategy(String upiID) {
 		this.upiID = upiID;
 	}
 

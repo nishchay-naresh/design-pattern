@@ -1,5 +1,5 @@
 package com.nishchay.dp.behavioral.strategy;
 
-public interface PayStrategy {
+public interface PaymentStrategy {
     void pay(int amount);
 }
