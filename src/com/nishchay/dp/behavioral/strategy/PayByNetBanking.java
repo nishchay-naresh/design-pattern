@@ -1,10 +1,10 @@
 package com.nishchay.dp.behavioral.strategy;
 
-public class NetBankingStrategy implements PaymentStrategy {
+public class PayByNetBanking implements PayStrategy {
 
-	private String bankName;
+	private final String bankName;
 
-	public NetBankingStrategy(String bankName) {
+	public PayByNetBanking(String bankName) {
 		this.bankName = bankName;
 	}
 
