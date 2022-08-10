@@ -1,10 +1,10 @@
 package com.nishchay.dp.behavioral.strategy;
 
-public class CardStrategy implements PaymentStrategy {
+public class PayByCard implements PayStrategy {
 
-	private String cardNumber;
+	private final String cardNumber;
 
-	public CardStrategy(String ccNum){
+	public PayByCard(String ccNum){
 		this.cardNumber=ccNum;
 	}
 
