@@ -5,30 +5,44 @@ import com.nishchay.dp.creational.factory.parse.Parser;
 public class Client {
 
     public static void main(String[] args) {
+        legacyWay();
+        System.out.println("--------------------------------");
+        lambdaWay();
+    }
 
-        Parser xmlParser = Factory.getParser("XmlParser");
-        if (xmlParser != null) {
-            xmlParser.parse();
-        }
+    private static void legacyWay() {
+        Parser xmlParser = Factory.createParser("xml");
+        xmlParser.parse();
 
-        Parser jsonParser = Factory.getParser("JsonParser");
-        if (jsonParser != null) {
-            jsonParser.parse();
-        }
+        Parser jsonParser = Factory.createParser("json");
+        jsonParser.parse();
 
-        Parser protBuffParser = Factory.getParser("ProtBuffParser");
-        if (protBuffParser != null) {
-            protBuffParser.parse();
-        }
+        Parser protBuffParser = Factory.createParser("protbuff");
+        protBuffParser.parse();
 
-        Parser fixedLengthParser = Factory.getParser("FixedLengthParser");
-        if (fixedLengthParser != null) {
-            fixedLengthParser.parse();
-        }
+        Parser fixedLengthParser = Factory.createParser("fixedlength");
+        fixedLengthParser.parse();
 
-//        Parser abcParser = Factory.getParser("UnknownParser");
-//        abcParser.parse();
-//        Exception in thread "main" java.lang.IllegalArgumentException: No Such DB exists
-//        Database testDB = Factory.getDBConnection("NOSQL");
+        // Exception in thread "main" java.lang.IllegalArgumentException: No such parser exists
+        // Parser unknownParser = Factory.createParser("unknown");
+        // unknownParser.parse();
+    }
+
+    private static void lambdaWay() {
+        Parser xmlParser = Factory.createParserJava8("xml");
+        xmlParser.parse();
+
+        Parser jsonParser = Factory.createParserJava8("json");
+        jsonParser.parse();
+
+        Parser protBuffParser = Factory.createParserJava8("protbuff");
+        protBuffParser.parse();
+
+        Parser fixedLengthParser = Factory.createParserJava8("fixedlength");
+        fixedLengthParser.parse();
+
+        // Exception in thread "main" java.lang.IllegalArgumentException: No such parser exists
+        // Parser unknownParser = Factory.createParser("unknown");
+        // unknownParser.parse();
     }
 }
