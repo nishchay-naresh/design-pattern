@@ -1,8 +1,15 @@
 package com.nishchay.dp.structural.delegator;
 
-public class DelegatedTask implements Task{
 
-    private Task task;
+/*
+ * when you want to perform some additional actions before/after you delegate
+ * (that's the Decorator pattern, but it's based on delegation).
+ *  For example, Collections.synchronizedList(..)
+ *
+ * */
+public class DelegatedTask implements Task {
+
+    private final Task task;
 
     public DelegatedTask(Task task) {
         this.task = task;
@@ -16,7 +23,7 @@ public class DelegatedTask implements Task{
 
     @Override
     public void doTask2() {
-            task.doTask2();
-            System.out.println("Extra things from Delegator#task2");
+        task.doTask2();
+        System.out.println("Extra things from Delegator#task2");
     }
 }
