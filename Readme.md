@@ -54,9 +54,8 @@ Do not do all the stuffs by yourself, delegate it.
 
 ### Resources
 
-- [Design patterns explained too simply](https://github.com/kamranahmedse/design-patterns-for-humans)
-- [Examples of design patterns in Java libraries](http://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries/2707195#2707195)
-
+- [Design patterns explained Pictorially ](https://refactoring.guru/design-patterns/catalog)
+- [DP Cheat Sheet ](../design-pattern/src/resources/DP_cheat_sheet.pdf)
 
 Types of Design Patterns
 1. Creational Patterns - Deals with the process of creation of objects of a class.
@@ -70,27 +69,28 @@ Types of Design Patterns
 
 ### 1. Creational: 
 
-1. Singleton - Single instance of class. Either Eager (static) or Lazy. Eg: Logger, Configurer
+1. Singleton - Makes sure there is just one instance. Either Eager (static) or Lazy. Eg: Logger, Configurer
 2. Builder - Way to construct complex objects ( immutable )Eg: StringBuilder, PizzaMaker
 3. Prototype - Wrapper of clone method, Copying costly-creation objects.
-4. Factory - Create types of instances. Eg: Trade type (Bonds, Bill, Notes)
-5. Abstract Factory - Factory of factories of related products. Eg: Trade Type (GermanBond, EuroBond, GermanBill, EuroBill)
+4. Factory / Factory Method - Assigns subclasses the task of instantiating objects. Eg: Trade type (Bonds, Bill, Notes)
+5. Abstract Factory - Constructs related object families without defining their concrete classes.
+Factory of factories of related products. Eg: Trade Type (GermanBond, EuroBond, GermanBill, EuroBill)
 6. Object pool - Re-use instances. Eg: Threadpool, objectpool
 
 ### 2. Structural: 
 
-6.	Adapter - Adapting to a non-direct-compatible class/module/system
+6.	Adapter - Acts as a bridge between two incompatible interface/module/system
 7.	Facade - Hiding complexity behind simple interfaces. Eg: Turbo Tax
-8.	Decorator -  Attaches additional functionality(enrichment) to objects at runtime. Eg: synchronizedXxx(), unmodifiableXxx()
-9.	Proxy - Eg: Hibernate proxy for lazy fetch. @Spy instances for JUnit/Mockito.
-10.	Flyweight - Store common characteristics of multiple objects at single place. Eg: String Interning
-11.	Composite - Allows composing objects into a tree-like structure and treat it like a single object. Eg:tree, Folder and files
+8.	Decorator - Attaches additional functionality(enrichment) to objects at runtime. Eg: synchronizedXxx(), unmodifiableXxx()
+9.	Proxy - Controls the access to an object. Eg: Hibernate proxy for lazy fetch. @Spy instances for JUnit/Mockito.
+10.	Flyweight - Share common parts of state between multiple objects to reduce memory. Eg: String Interning
+11.	Composite - Handles single and composite objects equally. Allows composing objects into a tree-like structure and treat it like a single object. Eg:Tree, LinkedList, Folder and files
 12.	Bridge - Decouple abstraction from implementation so that both can vary independently. Bridge pattern is often created using Adapter pattern.
 
 
 ### 3. Behavioral: 
 
-13.	Observer - publish-subscribe pattern. Eg: Reactive streams.
+13.	Observer - Observe and notify multiple objects about any events that happen to the object they’re observing. publish-subscribe pattern. Eg: Reactive streams.
 14.	Chain of Responsibility - Object passes through various instances, coordinated by Handler. Eg: A try-catch block with multiple catch
 15.	Visitor - Object which visits all similar instances. Eg: File Traverse, or Calculate total bill from cart.
 16.	Command - Object encapsulates action with common interface which executor calls. Eg: Remote click.

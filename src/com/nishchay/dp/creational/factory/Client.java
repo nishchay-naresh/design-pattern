@@ -23,7 +23,7 @@ public class Client {
         Parser fixedLengthParser = Factory.createParser("fixedlength");
         fixedLengthParser.parse();
 
-        // Exception in thread "main" java.lang.IllegalArgumentException: No such parser exists
+        // Exception in thread "main" java.lang.IllegalArgumentException: No such parser exists - unknown
         // Parser unknownParser = Factory.createParser("unknown");
         // unknownParser.parse();
     }
@@ -41,8 +41,8 @@ public class Client {
         Parser fixedLengthParser = Factory.createParserJava8("fixedlength");
         fixedLengthParser.parse();
 
-        // Exception in thread "main" java.lang.IllegalArgumentException: No such parser exists
-        // Parser unknownParser = Factory.createParser("unknown");
-        // unknownParser.parse();
+         // Exception in thread "main" java.lang.IllegalArgumentException: No such parser exists : unknown
+         Parser unknownParser = Factory.createParserJava8("unknown");
+         unknownParser.parse();
     }
 }

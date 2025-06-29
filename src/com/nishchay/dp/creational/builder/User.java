@@ -60,6 +60,13 @@ public class User {
             this.lastName = lastName;
         }
 
+        /*
+         *	Why does the builder method return Builder?
+         *		-	Method Chaining: Returning this allows multiple method calls in a single statement.
+         *		-	Immutable Objects: The Builder pattern is often used to construct immutable objects step by step.
+         *		-	Readability: It improves readability by allowing a clean and structured way to set values.
+         *
+         * */
         public UserBuilder age(int age) {
             this.age = age;
             return this;
