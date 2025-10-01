@@ -2,29 +2,37 @@
 
 ####    SOLID
 
-**S - Single Responsibility Principle**
+**S - Single Responsibility Principle (SRP)**
     
 “One class should have one and only one responsibility”
 
-**O - Open Closed Principle**
+**O - Open Closed Principle (OCP)**
 
-“Software components should be open for extension, but closed for modification”
+“Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification. — Bertrand Meyer”
 
-**L - Liskov’s Substitution Principle**
+**L - Liskov’s Substitution Principle (LSP)**
 
 “Derived types must be completely substitutable for their base types”
 
+"If S is a subtype of T, then objects of type T may be replaced with objects of type S without altering any of the desirable properties of that program (correctness, task performed, etc.)." — Barbara Liskov, 1987
+
 **I - Interface Segregation Principle**
 
-Make fine grained interfaces that are client specific.
+Make fine-grained interfaces that are client specific.
 
-Don't create fatty interface, Implementation classes require to implement unnecessary methods
+Don't create fatty interface so that Implementation classes require to implement unnecessary methods
+
+Clients should not be forced to depend on methods they do not use.
  
-**D - Dependency Inversion Principle**
+**D - Dependency Inversion Principle (DIP)**
 
-Dependency Inversion principle states that:
-1.	High-level modules should not depend on low-level modules. Both should depend on abstractions.
-2.	Abstractions should not depend on details. Details should depend on abstractions.
+The legendary Robert C. Martin (Uncle Bob) lays down DIP with two golden rules::
+1.	High-level modules should not depend on low-level modules. Both should depend on abstractions(e.g., interfaces).
+2.	Abstractions should not depend on details. Details(concrete implementations) should depend on abstractions.
+
+High-level modules define what they need (the contract/interface), and 
+Low-level modules provide the how (the implementation of that interface).
+
 
 ## Few More Design Principles
 
@@ -49,6 +57,15 @@ Helps in maintenance, improve flexibility
 Do not do all the stuffs by yourself, delegate it.
 
 **6. KISS (Keep It Simple, Stupid)**
+
+“Most systems work best if they are kept simple rather than made complex. Therefore, simplicity should be a key goal in design.”
+
+**7. YAGNI (You Aren’t Gonna Need It)**
+
+“Always implement things when you actually need them, never when you just foresee that you need them.” — Ron Jeffries, co-founder of Extreme Programming
+In simple terms: Don’t build for tomorrow. Build for today.
+
+
 
 # Design Patterns
 
