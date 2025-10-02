@@ -65,7 +65,14 @@ Do not do all the stuffs by yourself, delegate it.
 “Always implement things when you actually need them, never when you just foresee that you need them.” — Ron Jeffries, co-founder of Extreme Programming
 In simple terms: Don’t build for tomorrow. Build for today.
 
+**8. The Law of Demeter (LoD)**
 
+Only talk to your immediate friends.” — Law of Demeter
+
+`Money price = customer.getShoppingCart().getItems().get(0).getProduct().getPrice();`
+This approach works, but it **smells bad**.
+
+It’s what we call a **“train wreck”** or **“dot-chaining”**: one object reaching through several others to get what it wants.
 
 # Design Patterns
 
