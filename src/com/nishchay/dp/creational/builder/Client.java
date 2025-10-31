@@ -2,7 +2,6 @@ package com.nishchay.dp.creational.builder;
 
 public class Client {
 
-
     public static void main(String[] args) {
 
         User user1 = new User.UserBuilder("Iron", "Man")
@@ -29,7 +28,5 @@ public class Client {
 
         System.out.println(user3);
     }
-
-
 }
 

@@ -21,7 +21,7 @@ public class User {
         this.city = builder.city;
     }
 
-    //All getter, and NO setter to provide immutability
+    // All getters, and No setter to provide immutability
     public String getFirstName() {
         return firstName;
     }
@@ -90,8 +90,11 @@ public class User {
         }
 
         private void validateUserObject(User user) {
-            //Do some basic validations to check 
-            //if user object does not break any assumption of system
+            //validations if a user object does not break any system specification
+            if(user.age > 100){
+                throw new IllegalArgumentException("Invalid age");
+            }
+
         }
     }
 }
