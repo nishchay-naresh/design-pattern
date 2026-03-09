@@ -1,0 +1,30 @@
+package com.nishchay.dp.a03structural.flyweight.without;
+
+import com.nishchay.dp.a03structural.flyweight.Coffee;
+import com.nishchay.dp.a03structural.flyweight.CoffeeFlavour;
+import com.nishchay.dp.a03structural.flyweight.CoffeeSugar;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CoffeeFactory {
+
+    protected static List<Coffee> coffeeList = new ArrayList<>();
+
+    public static Coffee makeCoffee(CoffeeFlavour flavourName, CoffeeSugar coffeeSugar) {
+
+        Coffee coffee = new Coffee(flavourName, coffeeSugar);
+
+        System.out.printf("Making '%s' with '%d' spoon sugar.\n", coffee.getFlavourName().getName(), coffee.getCoffeeSugar().getSugar());
+
+        coffeeList.add(coffee);
+
+        return coffee;
+
+    }
+
+    public static int getNumberOfCoffee() {
+        return coffeeList.size();
+    }
+
+}

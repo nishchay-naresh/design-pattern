@@ -96,7 +96,7 @@ Types of Design Patterns
 1. Singleton - Makes sure there is just one instance. Either Eager (static) or Lazy. Eg: Logger, Configurer
 2. Builder - Way to construct complex objects ( immutable )Eg: StringBuilder, PizzaMaker
 3. Prototype - Wrapper of clone method, Copying costly-creation objects.
-4. Factory / Factory Method - Assigns subclasses the task of instantiating objects. Eg: Trade type (Bonds, Bill, Notes)
+4. Factory / Factory Method - Useful when you want to delegate object creation without exposing the instantiation details to the client.
 5. Abstract Factory - Constructs related object families without defining their concrete classes.
 Factory of factories of related products. Eg: Trade Type (GermanBond, EuroBond, GermanBill, EuroBill)
 6. Object pool - Re-use instances. Eg: Threadpool, objectpool
@@ -104,8 +104,9 @@ Factory of factories of related products. Eg: Trade Type (GermanBond, EuroBond, 
 ### 2. Structural: 
 
 6.	Adapter - Acts as a bridge between two incompatible interface/module/system
-7.	Facade - Hiding complexity behind simple interfaces. Eg: Turbo Tax
-8.	Decorator - Attaches additional functionality(enrichment) to objects at runtime. Eg: synchronizedXxx(), unmodifiableXxx()
+7.	Facade - Hiding complexity behind simplified interface. Eg: Turbo Tax
+8.	Decorator - When we want to add new behavior to objects without altering existing code.
+Attaches additional functionality(enrichment) to objects at runtime. Eg: synchronizedXxx(), unmodifiableXxx()
 9.	Proxy - Controls the access to an object. Eg: Hibernate proxy for lazy fetch. @Spy instances for JUnit/Mockito.
 10.	Flyweight - Share common parts of state between multiple objects to reduce memory. Eg: String Interning
 11.	Composite - Handles single and composite objects equally. Allows composing objects into a tree-like structure and treat it like a single object. Eg:Tree, LinkedList, Folder and files
@@ -125,3 +126,4 @@ Factory of factories of related products. Eg: Trade Type (GermanBond, EuroBond, 
 21.	Interpreter - Format converter. Eg: JVM converts byte to native for JVM.
 22.	Memento - Snapshot. Save and restore state of object. Eg: UseCase - implement undo feature
 
+Tip: Don’t force patterns. Let the problem shape the pattern, not the other way around.
